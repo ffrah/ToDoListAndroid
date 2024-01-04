@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="2"
+        android:rowCount="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_column="0"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/noTaskTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task list is empty"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/noTaskMessageTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seems like You have done all your tasks for now. \nYou may add a new task if you want to."
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_note_add_24"
+                android:layout_column="1"
+                android:layout_gravity="center">
+            </ImageView>
+
+        </GridLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addANewTask"
+        android:icon="@drawable/baseline_add_24"
+        android:title="Add a new task"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/deleteAllCompletedTasks"
+        android:icon="@drawable/baseline_check_24"
+        android:title="Delete all completed tasks"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/deleteAllTasks"
+        android:icon="@drawable/baseline_cancel_24"
+        android:title="Delete all tasks"
+        app:showAsAction="never|withText" />
+
+    <!--<item
+        android:id="@+id/changeOrder"
+        android:icon="@drawable/baseline_format_list_numbered_24"
+        android:title="Order: "
+        app:showAsAction="never|withText" />-->
+
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <TextView
+            android:id="@+id/taskNoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0. "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_column="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/taskNameEditText"
+            android:text="example task"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"/>
+
+        <CheckBox
+            android:id="@+id/isDoneCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginRight="16dp"></CheckBox>
+    </GridLayout>
+    <View android:id="@+id/bottomLine"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/gray" />
+</LinearLayout>
